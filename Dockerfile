@@ -1,10 +1,9 @@
-FROM alpine:3.7
-
-MAINTAINER Dmitry Lisin <Dmitry.Lisin@gmail.com>
+FROM alpine:3.24
 
 RUN apk add --no-cache \
     ca-certificates \
-    openssl \
+    sqlite \
+    tzdata \
     curl \
     jq
 
